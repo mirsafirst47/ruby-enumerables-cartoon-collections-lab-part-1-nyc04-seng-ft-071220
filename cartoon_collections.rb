@@ -11,7 +11,9 @@ def list_dwarves(array)
   # Use `each_with_index` to enumerate over the provided array
   #
   # Print a numbered list of each element
+  arr = []
   %w(array).each_with_index do |char, index|
-    array[char] = index
+    arr[char] = index
   end
+  arr
 end
